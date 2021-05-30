@@ -17,7 +17,7 @@ public class ValidationService {
     public ServiceResponse validateRules(SearchData searchData) {
         ServiceResponse serviceResponse = new ServiceResponse();
         try {
-            Schedule date = searchData.getDate();
+            Schedule date = searchData.getSchedule();
             MeanOfTransport meanOfTransport = searchData.getMeanOfTransport();
 
             String plateNumber = meanOfTransport.getPlateNumber();
@@ -28,8 +28,11 @@ public class ValidationService {
             logger.log(Level.INFO, "HOUR: " + hour);
 
             Boolean dayAllowed = validateDay(plateNumber, day);
+            logger.log(Level.INFO, "dayAllowed: " + dayAllowed);
             if (!dayAllowed) {
-                serviceResponse.setResult(validateHour(hour));
+                Boolean hourAllowed = validateHour(hour);
+                logger.log(Level.INFO, "hourAllowed: " + hourAllowed);
+                serviceResponse.setResult(hourAllowed);
             } else serviceResponse.setResult(true);
         } catch(BusinessException be){
             serviceResponse.setResult(false);
@@ -57,15 +60,15 @@ public class ValidationService {
     }
 
     private Boolean validateHour(LocalTime hour){
-        LocalTime startMorning = LocalTime.of(7, 00);
-        LocalTime endMorning = LocalTime.of(9, 30);
+        LocalTime startMorning = LocalTime.of(6, 59);
+        LocalTime endMorning = LocalTime.of(9, 31);
 
-        LocalTime startNight = LocalTime.of(16, 00);
-        LocalTime endNight = LocalTime.of(19, 30);
+        LocalTime startNight = LocalTime.of(15, 59);
+        LocalTime endNight = LocalTime.of(19, 31);
 
-        if (hour.isBefore(startMorning) && hour.isAfter(endMorning)
-                && hour.isBefore(startNight) && hour.isAfter(endNight)) {
-            return true;
-        } else return false;
+        if (hour.isAfter(startMorning) && hour.isBefore(endMorning)
+                || hour.isAfter(startNight) && hour.isBefore(endNight)) {
+            return false;
+        } else return true;
     }
 }
