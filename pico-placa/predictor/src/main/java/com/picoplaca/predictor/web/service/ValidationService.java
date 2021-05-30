@@ -54,10 +54,6 @@ public class ValidationService implements IValidationService{
             serviceResponse.setData(new BusinessException(1, e.getMessage()));
         }
         logger.log(Level.INFO, "VALIDATE SCHEDULE ---> " + serviceResponse.getResult());
-        if(!serviceResponse.getResult()) {
-            BusinessException be = (BusinessException) serviceResponse.getData();
-            logger.log(Level.INFO, "VALIDATE SCHEDULE MESSAGE---> " + be.getErrorMessage());
-        }
         return serviceResponse;
     }
 
