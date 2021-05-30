@@ -1,37 +1,41 @@
 package com.picoplaca.predictor.web.service;
 
-import com.picoplaca.predictor.web.model.Date;
-import com.picoplaca.predictor.web.model.MeanOfTransport;
-import com.picoplaca.predictor.web.model.SearchInput;
+import com.picoplaca.predictor.web.model.*;
 import com.picoplaca.predictor.web.util.DateUtil;
 import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalTime;
 import java.util.Objects;
 
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.LogManager;
-
 @Service
-public class RuleService {
-    Logger logger = LogManager.getLogger(RuleService.class);
+public class ValidationService {
+    Logger logger = LogManager.getLogger(ValidationService.class);
 
-    public Boolean validateRules(SearchInput searchInput){
-        Date date = searchInput.getDate();
-        MeanOfTransport meanOfTransport = searchInput.getMeanOfTransport();
+    public ServiceResponse validateRules(SearchData searchData) {
+        ServiceResponse serviceResponse = new ServiceResponse();
+        try {
+            Schedule date = searchData.getDate();
+            MeanOfTransport meanOfTransport = searchData.getMeanOfTransport();
 
-        String plateNumber = meanOfTransport.getPlateNumber();
-        Integer day = DateUtil.getDayOfDate(date.getDate());
-        LocalTime hour = DateUtil.getHour(date.getHour());
+            String plateNumber = meanOfTransport.getPlateNumber();
+            Integer day = DateUtil.getDayOfDate(date.getDate());
+            LocalTime hour = DateUtil.getHour(date.getHour());
 
-        logger.log(Level.INFO, "DAY: " + day);
-        logger.log(Level.INFO, "HOUR: " + hour);
+            logger.log(Level.INFO, "DAY: " + day);
+            logger.log(Level.INFO, "HOUR: " + hour);
 
-        Boolean dayAllowed = validateDay(plateNumber, day);
-        if (!dayAllowed){
-            return validateHour(hour);
-        } else return true;
+            Boolean dayAllowed = validateDay(plateNumber, day);
+            if (!dayAllowed) {
+                serviceResponse.setResult(validateHour(hour));
+            } else serviceResponse.setResult(true);
+        } catch(BusinessException be){
+            serviceResponse.setResult(false);
+            serviceResponse.setData(be);
+        }
+        return serviceResponse;
     }
 
     private Boolean validateDay(String plateNumber, Integer day){

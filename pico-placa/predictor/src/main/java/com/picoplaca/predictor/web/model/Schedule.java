@@ -1,11 +1,13 @@
 package com.picoplaca.predictor.web.model;
 
-public class Date {
+public class Schedule {
 
     public String date;
     public String hour;
 
-    public Date(String date, String hour) {
+    public Schedule(){}
+
+    public Schedule(String date, String hour) {
         this.date = date;
         this.hour = hour;
     }
