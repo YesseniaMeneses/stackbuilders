@@ -24,9 +24,6 @@ public class ValidationService {
             Integer day = DateUtil.getDayOfDate(date.getDate());
             LocalTime hour = DateUtil.getHour(date.getHour());
 
-            logger.log(Level.INFO, "DAY: " + day);
-            logger.log(Level.INFO, "HOUR: " + hour);
-
             Boolean dayAllowed = validateDay(plateNumber, day);
             logger.log(Level.INFO, "dayAllowed: " + dayAllowed);
             if (!dayAllowed) {
@@ -43,7 +40,6 @@ public class ValidationService {
 
     private Boolean validateDay(String plateNumber, Integer day){
         Integer lastDigit = Integer.valueOf(plateNumber.substring(plateNumber.length()-1));
-        logger.log(Level.INFO, "lastDigit: " + lastDigit);
         switch (day){
             case 1:
                 return !Objects.equals(1, lastDigit) && !Objects.equals(2, lastDigit);

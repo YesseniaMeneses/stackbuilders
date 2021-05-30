@@ -24,7 +24,7 @@ public class ValidatorController {
 
 
 	@RequestMapping(value="/picoplaca", method = RequestMethod.POST)
-	public String validation(@RequestParam String plateNumber,
+	public String validateSchedule(@RequestParam String plateNumber,
 						   @RequestParam String date,
 						   @RequestParam String hour,  ModelMap model) {
 
