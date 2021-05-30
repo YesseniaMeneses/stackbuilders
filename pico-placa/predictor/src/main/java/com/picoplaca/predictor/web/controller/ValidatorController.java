@@ -17,13 +17,13 @@ public class ValidatorController {
 	@Autowired
     RuleService service;
 
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = "/picoplaca", method = RequestMethod.GET)
 	public String showWelcomePage(ModelMap model) {
-		return "greeting";
+		return "predictor";
 	}
 
 
-	@RequestMapping(value="/", method = RequestMethod.POST)
+	@RequestMapping(value="/picoplaca", method = RequestMethod.POST)
 	public String greeting(@RequestParam String plateNumber,
 						   @RequestParam String date,
 						   @RequestParam String hour,  ModelMap model) {
@@ -37,6 +37,6 @@ public class ValidatorController {
 		} else {
 			model.put("validation", "YOUR CAR CANNOT BE ON THE ROAD");
 		}
-		return "greeting";
+		return "predictor";
 	}
 }

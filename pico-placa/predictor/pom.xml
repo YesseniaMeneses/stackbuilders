@@ -8,7 +8,7 @@
 		<version>2.4.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.pico-placa</groupId>
+	<groupId>com.picoplaca</groupId>
 	<artifactId>predictor</artifactId>
 	<version>1.0.0</version>
 	<name>predictor</name>

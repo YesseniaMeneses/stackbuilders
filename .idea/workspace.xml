@@ -20,65 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7971d2f0-cf89-41a3-9d3b-09ed886130fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pico-placa/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/CONTRIBUTING.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/LICENSE.writing.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/README.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/src/main/java/com/picoplaca/predictor/web/controller/GreetingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/src/main/java/com/picoplaca/predictor/web/controller/WelcomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/src/main/java/com/picoplaca/predictor/web/model/Date.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/src/main/java/com/picoplaca/predictor/web/model/MeanOfTransport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/src/main/java/com/picoplaca/predictor/web/model/SearchInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/src/main/java/com/picoplaca/predictor/web/rule/PicoPlacaRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/src/main/java/com/picoplaca/predictor/web/service/RuleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/src/main/java/com/picoplaca/predictor/web/util/DateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/src/main/resources/templates/greeting.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/src/test/java/com/example/servingwebcontent/ServingWebContentApplicationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico-placa/test/run.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/CONTRIBUTING.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/LICENSE.writing.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/README.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/java/com/pico&amp;placa/predictor/web/ServingWebContentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/pico-placa/predictor/src/main/java/com/picoplaca/predictor/web/WebApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/java/com/pico&amp;placa/predictor/web/controller/GreetingController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/java/com/pico&amp;placa/predictor/web/controller/WelcomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/java/com/pico&amp;placa/predictor/web/model/Date.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/java/com/pico&amp;placa/predictor/web/model/MeanOfTransport.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/java/com/pico&amp;placa/predictor/web/model/SearchInput.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/java/com/pico&amp;placa/predictor/web/rule/PicoPlacaRule.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/java/com/pico&amp;placa/predictor/web/service/RuleService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/java/com/pico&amp;placa/predictor/web/util/DateUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/resources/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/resources/templates/greeting.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/src/test/java/com/example/servingwebcontent/ServingWebContentApplicationTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pico&amp;placa/test/run.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico-placa/predictor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pico-placa/predictor/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico-placa/predictor/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/pico-placa/predictor/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico-placa/predictor/src/main/java/com/picoplaca/predictor/web/WebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/pico-placa/predictor/src/main/java/com/picoplaca/predictor/web/WebApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico-placa/predictor/src/main/java/com/picoplaca/predictor/web/controller/ValidatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pico-placa/predictor/src/main/java/com/picoplaca/predictor/web/controller/ValidatorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico-placa/predictor/src/main/resources/templates/greeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/pico-placa/predictor/src/main/resources/templates/predictor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico-placa/predictor/src/test/java/com/example/servingwebcontent/ServingWebContentApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/pico-placa/predictor/src/test/java/com/example/servingwebcontent/ServingWebContentApplicationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,20 +80,7 @@
       <recent name="D:\YESS\stackbuilders\pico&amp;placa\predictor\src\main\java\com\pico&amp;placa\predictor\web" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ServingWebContentApplication">
-    <configuration name="PredictorApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.picoplaca.predictor.PredictorApplication" />
-      <module name="predictor" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.picoplaca.predictor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.WebApplication">
     <configuration name="ServingWebContentApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.servingwebcontent.ServingWebContentApplication" />
       <module name="serving-web-content" />
@@ -185,6 +120,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WebApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.picoplaca.predictor.web.WebApplication" />
+      <module name="serving-web-content" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.picoplaca.predictor.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BlogApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="blog" />
       <option name="VM_PARAMETERS" />
@@ -200,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WebApplication" />
         <item itemvalue="Application.ServingWebContentApplication" />
         <item itemvalue="Application.SpringBootFirstWebApplication (1)" />
         <item itemvalue="Application.SpringBootFirstWebApplication" />
         <item itemvalue="Kotlin.BlogApplicationKt" />
-        <item itemvalue="Application.PredictorApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -248,26 +196,30 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="302" y="222" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1280.680@0.0.1280.680" timestamp="1622329684140" />
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1622338102836">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1622338102836" />
     <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1622259725349">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1622259725349" />
-    <state width="1237" height="293" key="GridCell.Tab.0.bottom" timestamp="1622336821153">
+    <state width="1237" height="132" key="GridCell.Tab.0.bottom" timestamp="1622338811405">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="293" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1622336821153" />
-    <state width="1237" height="293" key="GridCell.Tab.0.center" timestamp="1622336821153">
+    <state width="1237" height="132" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1622338811405" />
+    <state width="1237" height="132" key="GridCell.Tab.0.center" timestamp="1622338811404">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="293" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1622336821153" />
-    <state width="1237" height="293" key="GridCell.Tab.0.left" timestamp="1622336821152">
+    <state width="1237" height="132" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1622338811404" />
+    <state width="1237" height="132" key="GridCell.Tab.0.left" timestamp="1622338811404">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="293" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1622336821152" />
-    <state width="1237" height="293" key="GridCell.Tab.0.right" timestamp="1622336821153">
+    <state width="1237" height="132" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1622338811404" />
+    <state width="1237" height="132" key="GridCell.Tab.0.right" timestamp="1622338811404">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="293" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1622336821153" />
+    <state width="1237" height="132" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1622338811404" />
     <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1622259258815">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
