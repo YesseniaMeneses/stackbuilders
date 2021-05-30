@@ -1,4 +1,4 @@
-package com.example.servingwebcontent.entities;
+package com.picoplaca.predictor.web.model;
 
 public class MeanOfTransport {
 

@@ -1,4 +1,4 @@
-package com.pico&placa.predictor.web;
+package com.picoplaca.predictor.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan("com.example.servingwebcontent")
-public class ServingWebContentApplication {
+public class WebApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ServingWebContentApplication.class, args);
+        SpringApplication.run(WebApplication.class, args);
     }
 
 }

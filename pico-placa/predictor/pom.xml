@@ -8,11 +8,11 @@
 		<version>2.4.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>serving-web-content</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>serving-web-content</name>
-	<description>Demo project for Spring Boot</description>
+	<groupId>com.pico-placa</groupId>
+	<artifactId>predictor</artifactId>
+	<version>1.0.0</version>
+	<name>predictor</name>
+	<description>Exercise for Stack Builders</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>

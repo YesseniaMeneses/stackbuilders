@@ -1,4 +1,4 @@
-package com.example.util;
+package com.picoplaca.predictor.web.util;
 
 import java.time.LocalDate;
 import java.time.LocalTime;

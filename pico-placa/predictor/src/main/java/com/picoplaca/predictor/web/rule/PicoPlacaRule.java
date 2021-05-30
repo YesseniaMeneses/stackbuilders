@@ -1,8 +1,8 @@
-package com.example.servingwebcontent.rules;
+package com.picoplaca.predictor.web.rule;
 
-import com.example.servingwebcontent.entities.Date;
-import com.example.servingwebcontent.entities.MeanOfTransport;
-import com.example.servingwebcontent.entities.SearchInput;
+import com.picoplaca.predictor.web.model.Date;
+import com.picoplaca.predictor.web.model.MeanOfTransport;
+import com.picoplaca.predictor.web.model.SearchInput;
 
 public class PicoPlacaRule extends SearchInput {
 

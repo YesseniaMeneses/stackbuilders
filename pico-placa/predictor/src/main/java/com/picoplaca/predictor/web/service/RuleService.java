@@ -1,9 +1,9 @@
-package com.example.servingwebcontent.services;
+package com.picoplaca.predictor.web.service;
 
-import com.example.servingwebcontent.entities.Date;
-import com.example.servingwebcontent.entities.MeanOfTransport;
-import com.example.servingwebcontent.entities.SearchInput;
-import com.example.util.DateUtil;
+import com.picoplaca.predictor.web.model.Date;
+import com.picoplaca.predictor.web.model.MeanOfTransport;
+import com.picoplaca.predictor.web.model.SearchInput;
+import com.picoplaca.predictor.web.util.DateUtil;
 import org.apache.logging.log4j.Level;
 import org.springframework.stereotype.Service;
 
