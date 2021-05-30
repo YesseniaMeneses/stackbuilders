@@ -19,7 +19,7 @@ public class DateUtil {
             return localDate.getDayOfWeek().getValue();
         } catch(Exception e){
             logger.log(Level.ERROR, e);
-            throw new BusinessException(1, "ERROR GETTING DAY OF THE DATE");
+            throw new BusinessException(1, Constant.DATE_ERROR);
         }
     }
 
@@ -29,7 +29,7 @@ public class DateUtil {
             return localTime;
         } catch(Exception e){
             logger.log(Level.ERROR, e);
-            throw new BusinessException(1, "ERROR GETTING HOUR");
+            throw new BusinessException(1, Constant.HOUR_ERROR);
         }
     }
 }

@@ -5,6 +5,7 @@ import com.picoplaca.predictor.web.model.MeanOfTransport;
 import com.picoplaca.predictor.web.model.Schedule;
 import com.picoplaca.predictor.web.model.SearchData;
 import com.picoplaca.predictor.web.model.ServiceResponse;
+import com.picoplaca.predictor.web.util.Constant;
 import com.picoplaca.predictor.web.util.DateUtil;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
@@ -27,17 +28,22 @@ public class ValidationService implements IValidationService{
             String plateNumber = meanOfTransport.getPlateNumber();
             Integer day = DateUtil.getDayOfDate(date.getDate());
             LocalTime hour = DateUtil.getHour(date.getHour());
-            Integer lastDigit = Integer.valueOf(plateNumber.substring(plateNumber.length()-1));
 
-            Boolean dayAllowed = validateDay(lastDigit, day);
-            logger.log(Level.INFO, "dayAllowed: " + dayAllowed);
+            if (plateNumber.length() > 0) {
+                Integer lastDigit = Integer.valueOf(plateNumber.substring(plateNumber.length() - 1));
+                Boolean dayAllowed = validateDay(lastDigit, day);
+                logger.log(Level.INFO, "dayAllowed: " + dayAllowed);
 
-            if (!dayAllowed) {
-                Boolean hourAllowed = validateHour(hour);
-                logger.log(Level.INFO, "hourAllowed: " + hourAllowed);
-                serviceResponse.setResult(hourAllowed);
+                if (!dayAllowed) {
+                    Boolean hourAllowed = validateHour(hour);
+                    logger.log(Level.INFO, "hourAllowed: " + hourAllowed);
+                    serviceResponse.setResult(hourAllowed);
+                } else {
+                    serviceResponse.setResult(true);
+                }
             } else {
-                serviceResponse.setResult(true);
+                serviceResponse.setResult(false);
+                serviceResponse.setData(new BusinessException(1, Constant.PLATE_NUMBER_ERROR_LENGTH));
             }
         } catch(BusinessException be){
             serviceResponse.setResult(false);
@@ -46,6 +52,11 @@ public class ValidationService implements IValidationService{
             logger.log(Level.FATAL, e);
             serviceResponse.setResult(false);
             serviceResponse.setData(new BusinessException(1, e.getMessage()));
+        }
+        logger.log(Level.INFO, "VALIDATE SCHEDULE ---> " + serviceResponse.getResult());
+        if(!serviceResponse.getResult()) {
+            BusinessException be = (BusinessException) serviceResponse.getData();
+            logger.log(Level.INFO, "VALIDATE SCHEDULE MESSAGE---> " + be.getErrorMessage());
         }
         return serviceResponse;
     }

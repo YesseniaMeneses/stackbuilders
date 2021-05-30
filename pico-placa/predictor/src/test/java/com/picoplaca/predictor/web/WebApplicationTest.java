@@ -158,8 +158,8 @@ public class WebApplicationTest {
 	public void validateNotAllowedPlateNumber() throws Exception {
 
 		SearchData searchData = new SearchData();
-		searchData.setSchedule(new Schedule("2021/13/24", "07:00"));
-		searchData.setMeanOfTransport(new MeanOfTransport("12345"));
+		searchData.setSchedule(new Schedule("2021/12/24", "07:00"));
+		searchData.setMeanOfTransport(new MeanOfTransport(""));
 
 		ValidationService validationService = new ValidationService();
 		ServiceResponse carOnTheRoadAllowed = validationService.validateRules(searchData);
