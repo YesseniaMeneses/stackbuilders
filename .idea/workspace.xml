@@ -20,38 +20,65 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7971d2f0-cf89-41a3-9d3b-09ed886130fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/CONTRIBUTING.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/LICENSE.writing.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/README.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/predictor/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/predictor/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/predictor/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/predictor/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/predictor/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/predictor/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/predictor/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/predictor/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/predictor/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/predictor/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/predictor/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/java/com/pico&amp;placa/predictor/util/DateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/java/com/pico&amp;placa/predictor/web/ServingWebContentApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/java/com/pico&amp;placa/predictor/web/controller/GreetingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/java/com/pico&amp;placa/predictor/web/controller/WelcomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/java/com/pico&amp;placa/predictor/web/model/Date.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/java/com/pico&amp;placa/predictor/web/model/MeanOfTransport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/java/com/pico&amp;placa/predictor/web/model/SearchInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/java/com/pico&amp;placa/predictor/web/rule/PicoPlacaRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/java/com/pico&amp;placa/predictor/web/service/RuleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/resources/templates/greeting.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/predictor/src/test/java/com/example/servingwebcontent/ServingWebContentApplicationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pico&amp;placa/test/run.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/CONTRIBUTING.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/LICENSE.writing.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/README.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/src/main/java/com/picoplaca/predictor/web/controller/GreetingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/src/main/java/com/picoplaca/predictor/web/controller/WelcomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/src/main/java/com/picoplaca/predictor/web/model/Date.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/src/main/java/com/picoplaca/predictor/web/model/MeanOfTransport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/src/main/java/com/picoplaca/predictor/web/model/SearchInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/src/main/java/com/picoplaca/predictor/web/rule/PicoPlacaRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/src/main/java/com/picoplaca/predictor/web/service/RuleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/src/main/java/com/picoplaca/predictor/web/util/DateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/src/main/resources/templates/greeting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/predictor/src/test/java/com/example/servingwebcontent/ServingWebContentApplicationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pico-placa/test/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/CONTRIBUTING.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/LICENSE.writing.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/README.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/java/com/pico&amp;placa/predictor/web/ServingWebContentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/pico-placa/predictor/src/main/java/com/picoplaca/predictor/web/WebApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/java/com/pico&amp;placa/predictor/web/controller/GreetingController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/java/com/pico&amp;placa/predictor/web/controller/WelcomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/java/com/pico&amp;placa/predictor/web/model/Date.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/java/com/pico&amp;placa/predictor/web/model/MeanOfTransport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/java/com/pico&amp;placa/predictor/web/model/SearchInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/java/com/pico&amp;placa/predictor/web/rule/PicoPlacaRule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/java/com/pico&amp;placa/predictor/web/service/RuleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/java/com/pico&amp;placa/predictor/web/util/DateUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/src/main/resources/templates/greeting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/predictor/src/test/java/com/example/servingwebcontent/ServingWebContentApplicationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pico&amp;placa/test/run.sh" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +118,6 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.language.Kotlin" />
   </component>
@@ -101,6 +127,9 @@
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.servingwebcontent.controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\YESS\stackbuilders\pico&amp;placa\predictor\src\main\java\com\pico&amp;placa\predictor\web" />
     </key>
   </component>
   <component name="RunManager" selected="Application.ServingWebContentApplication">

@@ -1,9 +1,9 @@
-package com.example.servingwebcontent.controller;
+package com.picoplaca.predictor.web.controller;
 
-import com.example.servingwebcontent.entities.Date;
-import com.example.servingwebcontent.entities.MeanOfTransport;
-import com.example.servingwebcontent.entities.SearchInput;
-import com.example.servingwebcontent.services.RuleService;
+import com.picoplaca.predictor.web.model.Date;
+import com.picoplaca.predictor.web.model.MeanOfTransport;
+import com.picoplaca.predictor.web.model.SearchInput;
+import com.picoplaca.predictor.web.service.RuleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class WelcomeController {
 
 	@Autowired
-	RuleService service;
+    RuleService service;
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String showWelcomePage(ModelMap model) {
