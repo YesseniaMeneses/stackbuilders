@@ -28,18 +28,20 @@ public class ValidatorController {
 						   @RequestParam String date,
 						   @RequestParam String hour,  ModelMap model) {
 
-		SearchData searchData = new SearchData();
-		searchData.setDate(new Schedule(date, hour));
-		searchData.setMeanOfTransport(new MeanOfTransport(plateNumber));
+		if (!Objects.isNull(plateNumber) && !Objects.isNull(date) && !Objects.isNull(hour)) {
+			SearchData searchData = new SearchData();
+			searchData.setSchedule(new Schedule(date, hour));
+			searchData.setMeanOfTransport(new MeanOfTransport(plateNumber));
 
-		ServiceResponse carOnTheRoadAllowed = service.validateRules(searchData);
-		if (carOnTheRoadAllowed.getResult()){
-			model.put("validation", "YOUR CAR CAN BE ON THE ROAD");
-		} else if (Objects.isNull(carOnTheRoadAllowed.getData())){
-			model.put("validation", "YOUR CAR CANNOT BE ON THE ROAD");
-		} else{
-			BusinessException be = (BusinessException) carOnTheRoadAllowed.getData();
-			model.put("validation", be.getErrorMessage());
+			ServiceResponse carOnTheRoadAllowed = service.validateRules(searchData);
+			if (carOnTheRoadAllowed.getResult()) {
+				model.put("validation", "YOUR CAR CAN BE ON THE ROAD");
+			} else if (Objects.isNull(carOnTheRoadAllowed.getData())) {
+				model.put("validation", "YOUR CAR CANNOT BE ON THE ROAD");
+			} else {
+				BusinessException be = (BusinessException) carOnTheRoadAllowed.getData();
+				model.put("validation", be.getErrorMessage());
+			}
 		}
 		return "predictor";
 	}

@@ -3,7 +3,7 @@ package com.picoplaca.predictor.web.model;
 public class SearchData {
 
     MeanOfTransport meanOfTransport;
-    Schedule date;
+    Schedule schedule;
 
     public MeanOfTransport getMeanOfTransport() {
         return meanOfTransport;
@@ -13,11 +13,11 @@ public class SearchData {
         this.meanOfTransport = meanOfTransport;
     }
 
-    public Schedule getDate() {
-        return date;
+    public Schedule getSchedule() {
+        return schedule;
     }
 
-    public void setDate(Schedule date) {
-        this.date = date;
+    public void setSchedule(Schedule schedule) {
+        this.schedule = schedule;
     }
 }
