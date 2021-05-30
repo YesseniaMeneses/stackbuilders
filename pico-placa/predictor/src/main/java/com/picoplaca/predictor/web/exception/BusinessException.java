@@ -1,4 +1,4 @@
-package com.picoplaca.predictor.web.model;
+package com.picoplaca.predictor.web.exception;
 
 public class BusinessException extends Throwable {
     Integer errorCode;

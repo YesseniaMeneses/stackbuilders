@@ -1,5 +1,6 @@
 package com.picoplaca.predictor.web.controller;
 
+import com.picoplaca.predictor.web.exception.BusinessException;
 import com.picoplaca.predictor.web.model.*;
 import com.picoplaca.predictor.web.service.ValidationService;
 import org.springframework.beans.factory.annotation.Autowired;

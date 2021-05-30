@@ -1,6 +1,6 @@
 package com.picoplaca.predictor.web.util;
 
-import com.picoplaca.predictor.web.model.BusinessException;
+import com.picoplaca.predictor.web.exception.BusinessException;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

@@ -5,8 +5,6 @@ public class Schedule {
     public String date;
     public String hour;
 
-    public Schedule(){}
-
     public Schedule(String date, String hour) {
         this.date = date;
         this.hour = hour;

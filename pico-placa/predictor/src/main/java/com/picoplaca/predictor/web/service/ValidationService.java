@@ -1,6 +1,10 @@
 package com.picoplaca.predictor.web.service;
 
-import com.picoplaca.predictor.web.model.*;
+import com.picoplaca.predictor.web.exception.BusinessException;
+import com.picoplaca.predictor.web.model.MeanOfTransport;
+import com.picoplaca.predictor.web.model.Schedule;
+import com.picoplaca.predictor.web.model.SearchData;
+import com.picoplaca.predictor.web.model.ServiceResponse;
 import com.picoplaca.predictor.web.util.DateUtil;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
@@ -11,7 +15,7 @@ import java.time.LocalTime;
 import java.util.Objects;
 
 @Service
-public class ValidationService {
+public class ValidationService implements IValidationService{
     Logger logger = LogManager.getLogger(ValidationService.class);
 
     public ServiceResponse validateRules(SearchData searchData) {
@@ -23,23 +27,30 @@ public class ValidationService {
             String plateNumber = meanOfTransport.getPlateNumber();
             Integer day = DateUtil.getDayOfDate(date.getDate());
             LocalTime hour = DateUtil.getHour(date.getHour());
+            Integer lastDigit = Integer.valueOf(plateNumber.substring(plateNumber.length()-1));
 
-            Boolean dayAllowed = validateDay(plateNumber, day);
+            Boolean dayAllowed = validateDay(lastDigit, day);
             logger.log(Level.INFO, "dayAllowed: " + dayAllowed);
+
             if (!dayAllowed) {
                 Boolean hourAllowed = validateHour(hour);
                 logger.log(Level.INFO, "hourAllowed: " + hourAllowed);
                 serviceResponse.setResult(hourAllowed);
-            } else serviceResponse.setResult(true);
+            } else {
+                serviceResponse.setResult(true);
+            }
         } catch(BusinessException be){
             serviceResponse.setResult(false);
             serviceResponse.setData(be);
+        } catch (Exception e){
+            logger.log(Level.FATAL, e);
+            serviceResponse.setResult(false);
+            serviceResponse.setData(new BusinessException(1, e.getMessage()));
         }
         return serviceResponse;
     }
 
-    private Boolean validateDay(String plateNumber, Integer day){
-        Integer lastDigit = Integer.valueOf(plateNumber.substring(plateNumber.length()-1));
+    private Boolean validateDay(Integer lastDigit, Integer day){
         switch (day){
             case 1:
                 return !Objects.equals(1, lastDigit) && !Objects.equals(2, lastDigit);
